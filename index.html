@@ -1,7 +1,71 @@
 <html>
-<head>
-</head>
-<body>
-<h1>This is website for study center.</h1>
-</body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"
+        
+            
+    </head>
+    <body a link="black">
+        <div class="header" align="center"><h1>Chankay Abhyasika
+            </h1>
+        </div>
+            <!--Images-->
+        
+        <div class ="images">
+       <div class="mySlides fade"><img src="hall.jpeg"></div>       
+       <div class="mySlides fade"><img src="hall1.jpg"></div>
+       <div class="mySlides fade"><img src="hall2.jpg"></div>
+     <div class="mySlides fade"><img src="hall3.jpg"></div>
+      <div class="mySlides fade"><img src="hall4.jpg"></div>
+        </div>
+        
+
+       
+
+        <script>
+       var i=0;
+        showSlides()
+        function showSlides() {
+          var j=0;
+          var slides = document.getElementsByClassName("mySlides");
+            for (j = 0; j < slides.length; j++) {
+                slides[j].style.display = "none";  
+            }
+            i++;
+            if(i > slides.length ) {
+                  i = 1;
+                }
+            slides[i-1].style.display = "block";
+            setTimeout(showSlides,2000);
+         
+        }
+        </script>
+
+        
+        
+        <script>
+            console.log("heelo");
+            var color = ["#E8DCC6", "#5D514B", "#B4AB96", "E7E0D5","#DFC6B1","#867A6A","#808080"];
+              var i = 0;
+              function change() {
+              
+                i++;
+                document.body.style.backgroundColor = color[i];
+                if(i > color.length - 1) {
+                    
+                  i = 0;
+                }
+              }
+              console.log(color.length);
+              setInterval(change, 1000);
+
+            
+            
+        </script>
+        
+         <!--Location using google maps-->
+        <div class="visit" style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;"><h2 align="center"><a href="https://maps.app.goo.gl/btoyzPUg6i4KX6BU7">Visit Us</h2>        
+        </div>
+
+    </body>
+        
 </html>

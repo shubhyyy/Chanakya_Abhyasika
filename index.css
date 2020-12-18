@@ -1,0 +1,58 @@
+body {
+  /*  background-image: url("hall.jpeg");
+*/
+}
+
+h1 {
+    color :rgb(255, 123, 0);
+    font-size : 50px;
+}
+/* images */
+.header {
+    background-color : rgb(145, 146, 140);
+}
+
+img {
+    vertical-align: middle;
+    width : 100%
+}
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.images {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+  
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
